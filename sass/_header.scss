@@ -1,0 +1,159 @@
+.header {
+  border-bottom: 1px solid #DDDDDD;
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+  }
+
+  &-logo {
+    margin-left: -5px;
+  }
+  
+  &-search {
+    display: flex;
+    justify-content: space-between;
+    max-width: 986px;
+    width: 100%;
+    margin: 0 10px;
+  }
+
+  &-top-menu {
+    &-items {
+      display: flex;
+      height: 49px;
+      align-items: center;
+      font-size: 14px;
+      color: #777777;
+      font-family: 'Circle-Regular';
+    }
+
+    &-link {
+      margin-right: 27px;
+      cursor: pointer;
+      &:hover {
+        color: $text-rose;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &-img {
+      margin-right: 7px;
+      cursor: pointer;
+    }
+    .last-img {
+      margin-right: 27px;
+    }
+  }
+
+
+  &-contacts {
+    line-height: 11px;
+    text-align: right;
+    height: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &-contacts-pnones {
+    font-family: 'Circle-Bold';
+    font-size: 16px;
+    color: $main-text;
+  }
+
+  .header-contacts-delivery {
+    font-size: 14px;
+    color: #777;
+    font-family: 'Circle-Regular';
+  }
+
+  &-nav {
+
+  }
+  &-nav-list {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-size: 15px;
+    color: $main-text;
+    font-family: 'Circle-Bold';
+  }
+
+  &-nav-list-item:hover {
+    cursor: pointer;
+    color: $text-rose;
+  }
+}
+
+.phone_rose {
+  color: $text-rose;
+}
+
+.search {
+  &-logo {
+    margin-right: 5px;
+    img {
+      margin: auto;
+    }
+  }
+  &-field {
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #EEEEEE;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Circle-Regular';
+    }
+}
+.reset-search {
+  margin-left: 25px;
+  align-self: center;
+}
+
+.more-categories-item {
+  color: #1A1A1A;
+  text-align: end;
+  &:hover {
+    color: $text-rose;
+  }
+}
+
+.promo-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../img/promo.png) no-repeat center center;
+  width: 283px;
+  height: 294px;
+  line-height: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: absolute;
+  right: 22%;
+  z-index: 200;
+
+  &-header {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #777777;
+    font-family: 'Circle-Regular';
+    margin-top: 62px;
+  }
+
+  &-header2 {
+    font-size: 21px;
+    color: $main-text;
+    font-family: 'Circle-Bold';
+    margin-bottom: 48px;
+  }
+
+}
